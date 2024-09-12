@@ -6,9 +6,7 @@ import matplotlib.pyplot as plt
 
 url = "C:/Users/ASUS/Documents/GitHub/PRODIGY-INFOTECH-Task-03/bank.csv" # bank.csv file's path from your device
 data = pd.read_csv(url, sep=';')
-
 data = pd.get_dummies(data, drop_first=True)
-
 X = data.drop('y_yes', axis=1)
 y = data['y_yes']
 
